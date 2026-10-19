@@ -1,1 +1,3 @@
 # semob-pi
+
+O SEMOB Dash é uma aplicação multiplataforma desenvolvida no Projeto Integrador da disciplina – Desenvolvimento Multiplataformas, do Instituto Mauá de Tecnologia, em parceria com a Secretaria de Mobilidade Urbana de São Caetano do Sul (SEMOB-SCS). Trata-se de um dashboard de operação do transporte coletivo municipal que centraliza os dados operacionais (linhas, frota, viagens, quilometragem, passageiros, receita e ocorrências), apresenta indicadores de desempenho de forma visual e utiliza uma API de Inteligência Artificial para apoiar a análise dos dados e a geração de resumos e relatórios.
