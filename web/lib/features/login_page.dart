@@ -155,9 +155,7 @@ class _LoginCardState extends State<_LoginCard> {
     await Future.delayed(const Duration(milliseconds: 600)); // trocar pela chamada à API
     if (!mounted) return;
     setState(() => _carregando = false);
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Dados válidos. A navegação entra no próximo passo.')),
-    );
+    Navigator.of(context).pushReplacementNamed('/visao-geral');
   }
 
   @override

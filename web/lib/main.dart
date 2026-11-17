@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'core/routes.dart';
 import 'core/theme.dart';
-import 'features/login_page.dart';
 
 void main() => runApp(const SemobApp());
 
@@ -8,10 +8,13 @@ class SemobApp extends StatelessWidget {
   const SemobApp({super.key});
 
   @override
-  Widget build(BuildContext context) => MaterialApp(
-        title: 'SEMOB · Painel de Operação',
-        debugShowCheckedModeBanner: false,
-        theme: buildTheme(),
-        home: const LoginPage(),
-      );
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'SEMOB · Painel de Operação',
+      debugShowCheckedModeBanner: false,
+      theme: buildTheme(),
+      initialRoute: '/login',
+      onGenerateRoute: generateRoute,
+    );
+  }
 }
